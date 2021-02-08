@@ -1,0 +1,105 @@
+@media screen and (max-width: 1200px) {
+    /* Header */
+    .nav_lists {
+        display: none;
+    }
+    .navbar-right {
+        display: none;
+    }
+    .btn_menu {
+        display: inline;
+    }
+    .headerbtns {
+        margin-top: 10px;
+    }
+    .headertext {
+        font-size: 75px;
+    }
+    /* Section 5 */
+    .sec5 img:first-child {
+        margin-bottom: 30px;
+    }
+    .sec5 form {
+        text-align: center;
+    }
+    .sec5 button {
+        margin-left: 22px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .menu>div {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    /* Header */
+    .headertext {
+        font-size: 45px;
+    }
+    /* Section 2 */
+    .sec2 {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    /* Section 5 */
+    .sec5 .form-control {width: 100%;}
+    .sec5 select {width: 100%;}
+    .sec5 label {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .sec5 img:first-child {
+        margin-bottom: 0px;
+        width: 40%
+    }
+    .col-sm-7 {
+        text-align: center;
+    }
+    .sec5 img:nth-child(2) {
+        width: 40%;
+    }
+    .sec5 .form-group {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    /* Section 2 */
+    .sec2row {
+        padding: 25px 0 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Header */
+    .headertext {
+        font-size: 35px;
+    }
+    .headerbtns:last-child {
+        margin-left: 0px;
+    }
+    /* Section 2 */
+    .sec2row>h1 {
+        font-size: 26px;
+    }
+    .sec2row>img {
+        width: 100%;
+    }
+    /* Section 3 */
+    .sec4main {
+        padding: 15px
+    }
+    .sec4main h2 {
+        padding: 0px 5px
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Section 1 */
+    .sec1 h2 {
+        font-size: 25px;
+    }
+}

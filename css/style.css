@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    background-image: url(../img/header_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 100px;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nav_lists a {
+    color: white;
+}
+
+.nav_lists {
+    padding-left: 190px;
+}
+
+.nav_lists>li {
+    font-family: 'Gentium Book Basic';
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Gentium Book Basic";
+}
+
+@keyframes lihover {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.nav li a {
+    padding-top: 70px;
+}
+
+.nav_lists>li:before {
+    content: "";
+    background-color: white;
+    width: 0;
+    height: 2px;
+    display: block;
+}
+
+.nav_lists>li:hover:before {
+    animation: lihover .4s linear 0s 1 forwards;
+}
+
+.headertext {
+    font-size: 90px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Yeseva One";
+    margin-top: 80px;
+}
+
+.headerimgs {
+    padding-top: 30px;
+}
+
+.headerbtns {
+    margin-top: 50px;
+}
+
+.headerbtns:hover {
+    animation: swing .7s linear 0s 1 forwards;
+    -webkit-animation: swing .7s linear 0s 1 forwards;
+}
+
+.headerbtns:first-child {
+    width: 220px;
+    height: 55px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.headerbtns:last-child {
+    width: 220px;
+    height: 55px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    margin-left: 20px;
+}
+
+.btn_menu {
+    display: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: 'Gentium Book Basic';
+    float: right;
+    margin-top: 50px;
+}
+
+/* Section 1 */
+
+.sec1 {
+    padding: 60px 0px;
+    background-image: url(../img/sec1background.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.dish2 {
+    float: right;
+}
+
+.sec1 h2 {
+    font-size: 36px;
+    line-height: 24px;
+    color: #cc9900;
+    font-weight: 400;
+    font-family: "Yeseva One";
+    text-align: center;
+}
+
+.sec1divider {
+    margin-top: 15px;
+}
+
+.sec1text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4c4c4c;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cook1 {
+    margin-top: 20px;
+}
+
+.col-lg-5 {
+    padding: 0px 30px;
+}
+
+/* Section 2 */
+
+.sec2 {
+    background-image: url(../img/sec2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    padding: 50px 100px;
+}
+
+.sec2row {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px 50px 0;
+    animation-name: secanim;
+    animation-duration: 3s;
+    animation-delay: .5s;
+    opacity: 0;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+@keyframes secanim {
+    from {opacity: 0;left: -200px;}
+    to {opacity: 1; left: 50px;}
+}
+
+.sec2row>h2 {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Yeseva One";
+    text-align: center;
+}
+
+.sec2row>p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    margin-top: 30px;
+    padding: 0px 20px;
+}
+
+.sec2row>img {
+    margin-top: 10px;
+}
+
+.in_block {
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+}
+
+/* Section 3 */
+
+.sec3 {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-image: url(../img/section3bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.sec3 h2 {
+    color: #DD9A00;
+    font-size: 36px;
+    font-family: "Yeseva One";
+    font-weight: 800;
+}
+
+.menu {
+    color: #DD9A00;
+    font-family: "Yeseva One";
+}
+
+.menu>div {
+    padding: 0px 5px;
+}
+
+.menu h3 {
+    font-family: "Yeseva One";
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(221, 154, 0, 0.3);
+    padding-bottom: 10px;
+}
+
+.menu span {
+    float: right;
+}
+
+.menu p {
+    color: #4c4c4c;
+}
+
+.border_special {
+    border: 0.5px solid rgba(221, 154, 0, 0.3);
+    position: relative;
+}
+
+.special {
+    background-image: url(../img/special.jpg);
+    color: white;
+    padding: 2px 9px;
+    font-family: "Lato";
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: -25px;
+}
+
+/* Section 4 */
+
+.sec4 {
+    background-image: url(../img/sec4bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 100px 0px;
+}
+
+.sec4main {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 800px;
+}
+
+.sec4main h2 {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Yeseva One";
+    text-align: center;
+}
+
+.sec4main h2 {
+    font-size: 25px;
+    line-height: 45px;
+    color: #dde0df;
+    font-weight: 700;
+    font-family: 'Gentium Book Basic';
+    text-align: center;
+    padding: 0px 36px;
+}
+
+.sec4main h2 span {
+    position: relative;
+    top: 40px;
+    font-size: 96px;
+    color: grey;
+    display: inline-block;
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+
+.sec4main p {
+    font-size: 15px;
+    line-height: 45px;
+    color: #dde0df;
+    font-weight: 400;
+    font-family: 'Gentium Book Basic';
+    text-align: center;
+}
+
+/* Section 5 */
+
+.sec5 {
+    background-image: url(../img/sec5bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px 0px;
+}
+
+.sec5 img:first-child {
+    margin-right: 30px;
+}
+
+.sec5 h2 {
+    font-family: "Yeseva One";
+    font-size: 36px;
+    color: rgb(204, 153, 0);
+}
+
+.sec5 p {
+    font-size: 16px;
+    font-family: "Lato";
+    line-height: 24px;
+    padding: 0px 10px;
+    margin-top: 30px;
+}
+
+#plast {
+    padding: 0px 15px;
+    margin-top: 15px;
+}
+
+.sec5 form {
+    margin-top: 20px;
+}
+
+.sec5 label {
+    font-family: "Open Sans";
+    color: rgb(204, 153, 0);
+    font-size: 14px;
+}
+
+.sec5 .form-control {
+    height: 35px;
+    width: 200px;
+    border-radius: 0px;
+}
+
+.sec5 select {
+    height: 35px;
+    width: 200px;
+    border: 1px solid #ccc;
+}
+
+.sec5 .form-group {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.sec5 button {
+    color: white;
+    background-color: rgb(201, 161, 49);
+    border: none;
+    border-radius: 0;
+    height: 35px;
+    width: 200px;
+    font-weight: 400;
+    font-style: "Open Sans";
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.form-control:focus {
+    border-color: rgb(201, 161, 49);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgb(201, 161, 49), 0 0 8px rgb(201, 161, 49);
+    box-shadow: inset 0 1px 1px rgb(201, 161, 49), 0 0 8px rgb(201, 161, 49);
+    transition: 0.8s;
+}
+
+.sec5 select:focus {
+    -webkit-box-shadow: inset 0 1px 1px rgb(201, 161, 49), 0 0 8px rgb(201, 161, 49);
+    box-shadow: inset 0 1px 1px rgb(201, 161, 49), 0 0 8px rgb(201, 161, 49);
+    transition: 0.8s;
+}
+
+/* Footer */
+
+footer {
+    background-color: #191919;
+    color: white;
+    padding: 50px 100px;
+}
+
+footer h2 {
+    font-size: 21px;
+    font-family: "Yeseva One";
+}
+footer p {
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.ftcol1 img {
+    margin-top: 20px;
+}
+.ftcol2>img{
+    margin-top: 23px;
+}
+.ftcol3>img{
+    margin-top: 23px;
+}
